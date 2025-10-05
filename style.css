@@ -1,0 +1,53 @@
+body {
+  background-color: #0d0d0f;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+}
+
+.battery {
+  position: relative;
+  width: 200px;
+  height: 100px;
+  border: 5px solid #00ff7f;
+  border-radius: 12px;
+  margin: 0 auto 20px;
+  overflow: hidden;
+  box-shadow: 0 0 15px #00ff7f88;
+}
+
+.battery-cap {
+  position: absolute;
+  right: -15px;
+  top: 30px;
+  width: 15px;
+  height: 40px;
+  background: #00ff7f;
+  border-radius: 2px;
+}
+
+.battery-level {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #00ff7f, #00ffaa);
+  transform-origin: left;
+  transition: width 0.5s ease-in-out;
+}
+
+.percent {
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+  color: #00ffaa;
+  text-shadow: 0 0 10px #00ffaa99;
+}
